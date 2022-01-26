@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productsListViewFragment">
+
+    <fragment
+        android:id="@+id/productsListViewFragment"
+        android:name="com.cooperlighting.xyzdemotraining.ui.ProductsListViewFragment"
+        android:label="Products" >
+        <action
+            android:id="@+id/action_productsListViewFragment_to_productsDetailViewFragment"
+            app:destination="@id/productsDetailViewFragment" />
+        <action
+            android:id="@+id/action_productsListViewFragment_to_productsCartFragment"
+            app:destination="@id/productsCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsDetailViewFragment"
+        android:name="com.cooperlighting.xyzdemotraining.ui.ProductsDetailViewFragment"
+        android:label="Product Information" >
+        <action
+            android:id="@+id/action_productsDetailViewFragment_to_productsCartFragment"
+            app:destination="@id/productsCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsCartFragment"
+        android:name="com.cooperlighting.xyzdemotraining.ui.ProductsCartFragment"
+        android:label="Shopping Cart"
+        tools:layout="@layout/fragment_products_cart" >
+        <action
+            android:id="@+id/action_productsCartFragment_to_productsDetailViewFragment"
+            app:destination="@id/productsDetailViewFragment" />
+        <action
+            android:id="@+id/action_productsCartFragment_to_productsDetailViewFragment2"
+            app:destination="@id/productsDetailViewFragment" />
+        <action
+            android:id="@+id/action_productsCartFragment_to_productsDetailViewFragment3"
+            app:destination="@id/productsDetailViewFragment" />
+    </fragment>
+</navigation>

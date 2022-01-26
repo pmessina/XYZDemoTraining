@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Menu item id's have to match up with navigation fragment id's-->
+    <item android:id="@+id/productsListViewFragment" android:title="Products" android:icon="@drawable/ic_product"/>
+    <item android:id="@+id/productsCartFragment" android:title="Shopping Cart" android:icon="@drawable/ic_shopping_cart"/>
+</menu>
