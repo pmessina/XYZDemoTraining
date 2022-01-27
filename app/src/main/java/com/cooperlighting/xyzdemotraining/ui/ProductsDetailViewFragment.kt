@@ -17,6 +17,7 @@ import kotlinx.coroutines.runBlocking
 import org.koin.android.viewmodel.ext.android.viewModel
 import java.io.InputStream
 import java.net.URL
+import java.text.DecimalFormat
 
 
 /**
@@ -49,7 +50,10 @@ class ProductsDetailViewFragment : Fragment() {
 
         currentProduct = productsViewModel.selectedProduct
 
-        binding.tvDVPrice.text = currentProduct.price.toString()
+        val decFormat = DecimalFormat("$###.##")
+        val price = decFormat.format(currentProduct.price)
+
+        binding.tvDVPrice.text = price
         binding.tvDVProductDescription.text = currentProduct.description
         binding.tvDVProductName.text = currentProduct.title
 
