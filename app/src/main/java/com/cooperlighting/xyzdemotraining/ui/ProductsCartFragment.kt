@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cooperlighting.xyzdemotraining.R
 import com.cooperlighting.xyzdemotraining.ProductsViewModel
-import com.cooperlighting.xyzdemotraining.contactsviewer.ShoppingCartRecyclerViewAdapter
+import com.cooperlighting.xyzdemotraining.ShoppingCartRecyclerViewAdapter
 import com.cooperlighting.xyzdemotraining.databinding.FragmentProductsCartBinding
 import org.koin.android.viewmodel.ext.android.viewModel
 
